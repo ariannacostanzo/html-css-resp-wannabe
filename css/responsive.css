@@ -1,11 +1,23 @@
-/* dimensioni sotto 768 px ma sopra 576 */
+/* dimensioni fra 1140 e 768 per sistemare il .container che non ha max-width */
+
+@media (max-width:1139px) and (min-width:769px) {
+    .container {
+        max-width: 769px;
+    }
+}
+
+
+
+
+/* dimensioni sotto 768 px ma sopra 576 px */
+
 
 @media screen and (max-width: 768px) {
 
     /* restringere i container */
 
     .container {
-        max-width: 720px;
+        max-width: 590px;
         padding: 0 10px;
     }
 
@@ -19,19 +31,99 @@
 }
 
 
-
 /* dimensioni sotto 576 */
 
 @media screen and (max-width: 576px) {
 
+    /* restringere i container */
+
+    .container {
+        max-width: 500px;
+        padding: 0;
+    }
+
+    /* aumentare dimensioni di h1 */
+
+    .site-header h1 {
+        font-size: 55px;
+    }
 
 
+    /*section lessons*/
+    
+    /* dare il padding perchè ho tolto il margine giù */
 
+    .lessons {
+        padding: 2rem 0;
+    }
 
+    /* aumentare dimensioni di h2 e togliere il margine per dare padding alle card */
 
+    .container h2 {
+        font-size: 45px;
+        margin-bottom: 0;
+    }
 
+    /* aumentare le dimensioni dell'h3 e del testo */
 
+    .container h3 {
+        font-size: 2rem;
+    }
 
+    p {
+        font-size: 1.3rem;
+    }
 
+    /* portare a capo le col */
+
+    .row {
+        flex-wrap: wrap;
+    }
+
+    /* fare prendere alle col l'intera larghezza e dare un po' di padding per restringere il testo*/
+
+    .lessons .col {
+        width: 100%;
+        padding: 2rem 3.5rem;
+    }
+
+    /*section steps*/
+
+    /* far prendere alle col tutta la larghezza e dare padding */
+
+    .steps {
+        margin: 0;
+    }
+
+    .steps .col {
+        width: 100%;
+        padding: 2rem 3.5rem;
+    }
+
+    /* section why us */
+
+    /* cambiare il background color e dare padding dopo aver tolto il margine perchè si vedeva ancora il colore blu del body  */
+    
+    .why-us {
+        background-color: #222;
+        padding: 3rem 0;
+        margin: 0;
+    }
+
+    /* far prendere alle col tutta la width e dare spazio tra di loro */
+
+    .why-us .col-left {
+        width: 100%;
+    }
+
+    .why-us .col-right {
+        width: 100%;
+    }
+
+    .why-us .col-left, .why-us .col-right {
+        padding: 2rem 3.5rem;
+    }
+
+    
 
 }
