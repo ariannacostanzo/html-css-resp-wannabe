@@ -1,0 +1,37 @@
+/* dimensioni sotto 768 px ma sopra 576 */
+
+@media screen and (max-width: 768px) {
+
+    /* restringere i container */
+
+    .container {
+        max-width: 720px;
+        padding: 0 10px;
+    }
+
+    
+    /* meno padding */
+
+    .col {
+        padding-right: 0;
+    }
+
+}
+
+
+
+/* dimensioni sotto 576 */
+
+@media screen and (max-width: 576px) {
+
+
+
+
+
+
+
+
+
+
+
+}
